@@ -50,7 +50,7 @@ Mis à part ce ReadMe, tout se trouve dans le dossier `/index`.
 2. Installer les prérequis dans R
 
 ```R
-install.packages("rmarkdown"))
+install.packages("rmarkdown")
 
 if (!require("remotes")) 
   install.packages("remotes", repos = "https://cran.rstudio.org")
@@ -69,6 +69,10 @@ remotes::install_github("ismayc/thesisdown")
 ## Est-ce qu'un RProject est nécessaire pour compiler le gabarit vide?
 
 Non.
+
+## J'obtiens une erreur "Lonely \item" ou "Environment CSLReferences undefined" lors de la compilation
+
+Ce problème a été résolu en novembre 2025. Assurez-vous d'utiliser la version la plus récente du template. Si vous utilisez une ancienne version, référez-vous au commit de correction de compatibilité pandoc ou créez un Issue.
 
 ## J'ai trouvé une erreur. Comment est-ce que je peux vous en informer?
 
