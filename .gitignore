@@ -1,3 +1,7 @@
+# AI tools configuration (local only)
+.claude/
+CLAUDE.md
+
 # Shared/Private folders
 _SharedFolder*
 _sharedFolder*

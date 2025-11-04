@@ -171,16 +171,6 @@ index/
 └───────────────────────────────────────────────────────────────┘
 ```
 
-### Tableau comparatif
-
-| Type | Crédits | Programme | Résumé max | Format |
-|------|---------|-----------|------------|--------|
-| **Mémoire** | 24 | Maîtrise recherche | 300 mots | Par articles ou traditionnel |
-| **Thèse** | — | Doctorat | 700 mots | Par articles ou traditionnel |
-| **Essai** | 9 | Maîtrise professionnelle | 300 mots* | Généralement traditionnel |
-
-*À valider avec votre département
-
 ---
 
 ## 🚀 Installation rapide
@@ -667,16 +657,18 @@ Les règles de présentation de la FESP peuvent changer. Ce gabarit est basé su
 
 ## 👥 Crédits
 
-**Contributeurs principaux:**
+**Mainteneur principal:**
+- **Adrien Cloutier** – Adaptation et mise à disposition pour la communauté ULaval
+
+**Contributeurs:**
 - Maxime Blanchard
-- Adrien Cloutier
 - Judith Bourque
 
 **Basé sur:**
 - [thesisdown](https://github.com/ismayc/thesisdown) package
 
 **Remerciements:**
-- [clessn](https://github.com/clessn) (Chaire de recherche sur la démocratie et les institutions parlementaires)
+- [Chaire de leadership en enseignement des sciences sociales numériques (CLESSN)](https://github.com/clessn)
 
 ---
 
