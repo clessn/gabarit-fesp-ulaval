@@ -8,10 +8,17 @@ _privateFolder*
 _Privatefolder*
 _privatefolder*
 
-# Autre
+# Build output directories (generated, do not commit)
+_book/
+_bookdown_files/
+_misc/
+
+# R and RStudio files
 .DS_Store
 .Rhistory
 .RData
+.Rapp.history
+.Rproj.user
 
 ##Excel
 *.xlsx

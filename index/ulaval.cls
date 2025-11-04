@@ -262,6 +262,16 @@
   \chapter*{Preface}
   \fontsize{12}{14}\selectfont
 }{\clearpage \if@restonecol\twocolumn\fi}%
+
+\newenvironment{avantpropos}{%
+  \if@twocolumn
+    \@restonecoltrue\onecolumn
+  \else
+    \@restonecolfalse
+  \fi
+  \chapter*{Avant-propos}
+  \fontsize{12}{14}\selectfont
+}{\clearpage \if@restonecol\twocolumn\fi}%
 % End of CII add
 
 \newenvironment{abstract}{%
