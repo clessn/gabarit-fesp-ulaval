@@ -10,6 +10,74 @@ Ce gabarit produit simultanément un fichier PDF et un fichier LaTeX lors du kni
 
 ---
 
+## 💡 Pourquoi utiliser R Markdown pour votre mémoire ou thèse?
+
+### Qu'est-ce que R Markdown?
+
+**R Markdown** combine la simplicité de **Markdown** (un langage de balisage léger pour formater du texte) avec la puissance de **R** (pour l'analyse de données et les graphiques) et de **LaTeX** (pour la mise en page professionnelle).
+
+```
+Votre texte en Markdown → R Markdown → LaTeX → PDF professionnel
+                              ↓
+                         Analyse + Graphiques
+```
+
+### Avantages par rapport aux gabarits Word ou LaTeX traditionnels
+
+| Aspect | Word | LaTeX pur | **R Markdown** |
+|--------|------|-----------|----------------|
+| **Facilité d'écriture** | ✅ Très facile | ❌ Courbe d'apprentissage raide | ✅ Syntaxe simple et lisible |
+| **Contrôle du formatage** | ❌ Limité, formatage instable | ✅ Contrôle total | ✅ Contrôle total via LaTeX |
+| **Intégration code/analyses** | ❌ Copier-coller manuel | ⚠️ Complexe | ✅ Intégration native R/Python |
+| **Reproductibilité** | ❌ Faible | ⚠️ Manuelle | ✅ Complète et automatique |
+| **Gestion bibliographie** | ⚠️ Zotero/Mendeley | ✅ BibTeX natif | ✅ BibTeX natif |
+| **Figures et tableaux** | ❌ Insertion manuelle | ⚠️ Complexe | ✅ Générés automatiquement |
+| **Collaboration Git** | ❌ Difficile (binaire) | ✅ Excellent | ✅ Excellent (texte brut) |
+| **Maintenance à long terme** | ❌ Risque de corruption | ✅ Stable | ✅ Stable |
+
+### Cas d'usage idéaux pour ce gabarit
+
+**✅ Parfait si vous:**
+- Faites des analyses quantitatives (statistiques, modélisation, data science)
+- Utilisez R, Python ou tout langage de programmation dans vos recherches
+- Voulez que vos graphiques et tableaux se mettent à jour automatiquement
+- Appréciez la reproductibilité scientifique
+- Êtes à l'aise avec les outils en ligne de commande ou souhaitez les apprendre
+- Voulez un contrôle précis sur le formatage sans les complexités de LaTeX pur
+
+**⚠️ Considérez les alternatives officielles si:**
+- Vous ne faites aucune analyse de données
+- Vous préférez un environnement WYSIWYG ("ce que vous voyez est ce que vous obtenez")
+- Votre discipline utilise exclusivement Word (ex: certains domaines en sciences humaines)
+- Vous devez collaborer avec des personnes n'utilisant que Word
+
+### Exemple concret: Pourquoi c'est puissant
+
+**Avec Word/LaTeX traditionnel:**
+```
+1. Analyser vos données dans R/SPSS/Excel
+2. Générer un graphique
+3. L'exporter en image
+4. L'insérer dans Word/LaTeX
+5. Ajuster la taille manuellement
+6. Vos données changent? → Recommencer 1-5
+```
+
+**Avec R Markdown:**
+```markdown
+Voici mes résultats d'analyse:
+
+'''r
+model <- lm(y ~ x, data = mes_donnees)
+summary(model)
+plot(model)
+'''
+
+Mes données changent? → Cliquez "Knit" → Tout se met à jour automatiquement.
+```
+
+---
+
 ## 🚨 NOUVELLE EXIGENCE FESP (12 janvier 2026)
 
 **À partir du 12 janvier 2026**, tous les mémoires et thèses dont le dépôt initial a lieu à cette date ou après **doivent obligatoirement inclure un avant-propos** contenant:
@@ -27,6 +95,7 @@ Ce gabarit produit simultanément un fichier PDF et un fichier LaTeX lors du kni
 
 ## 📋 Table des matières
 
+- [Pourquoi utiliser R Markdown?](#-pourquoi-utiliser-r-markdown-pour-votre-mémoire-ou-thèse)
 - [Structure du repository](#-structure-du-repository)
 - [Choisir votre type de document](#-choisir-votre-type-de-document)
 - [Installation rapide](#-installation-rapide)
