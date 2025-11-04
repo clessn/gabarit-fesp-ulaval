@@ -222,8 +222,8 @@ Cliquez sur le bouton vert **"Use this template"** en haut de cette page pour cr
 **Option B: Cloner le repository**
 
 ```bash
-git clone https://github.com/clessn/memoire-ulaval.git
-cd memoire-ulaval
+git clone https://github.com/clessn/gabarit-fesp-ulaval.git
+cd gabarit-fesp-ulaval
 ```
 
 ### 3. Test initial
