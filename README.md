@@ -128,7 +128,7 @@ index/
 ### Arbre de décision
 
 ```
-┌─ Quel est votre programme? ───────────────────────────────────┐
+┌─ Quel est votre programme? ────────────────────────────────────┐
 │                                                                 │
 ├─ Maîtrise RECHERCHE (24 crédits) → MÉMOIRE                    │
 │   │                                                             │
@@ -168,7 +168,7 @@ index/
     │       ├─ chapter_name: "Chapitre "                        │
     │       └─ Résumé: 700 mots max                             │
     │                                                             │
-└───────────────────────────────────────────────────────────────┘
+└─────────────────────────────────────────────────────────────────┘
 ```
 
 ---
@@ -189,11 +189,29 @@ index/
 
 **LaTeX (obligatoire)**
 
-Sur Mac, installez [MacTeX](https://tug.org/mactex/) (⚠️ fichier de 5 GB):
+**Sur Mac:**
+Installez [MacTeX](https://tug.org/mactex/) (⚠️ fichier de 5 GB):
 
 ```bash
 # Ou via Homebrew:
 brew install --cask mactex
+```
+
+**Sur Windows:**
+Installez [MiKTeX](https://miktex.org/download) ou [TeX Live](https://www.tug.org/texlive/windows.html):
+- MiKTeX recommandé pour les débutants (installation automatique des packages manquants)
+- Téléchargez l'installateur depuis [miktex.org/download](https://miktex.org/download)
+
+**Sur Linux:**
+```bash
+# Ubuntu/Debian
+sudo apt-get install texlive-full
+
+# Fedora
+sudo dnf install texlive-scheme-full
+
+# Arch Linux
+sudo pacman -S texlive-most
 ```
 
 **Packages R (obligatoires)**
