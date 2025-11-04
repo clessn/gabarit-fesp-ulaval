@@ -107,44 +107,6 @@ Votre texte en Markdown → R Markdown → LaTeX → PDF professionnel
 
 **📚 Documentation:** [Bookdown Manual](https://bookdown.org/yihui/bookdown/) (utilisé par ce gabarit) • [Quarto Guide](https://quarto.org/docs/guide/)
 
-### Ce gabarit est-il fait pour vous?
-
-**✅ Parfait si vous:**
-- Faites des analyses quantitatives (statistiques, modélisation, data science)
-- Utilisez R, Python ou tout langage de programmation dans vos recherches
-- Voulez que vos graphiques et tableaux se mettent à jour automatiquement
-- Appréciez la reproductibilité scientifique
-
-**⚠️ Considérez les alternatives officielles si:**
-- Vous ne faites aucune analyse de données
-- Vous préférez un environnement WYSIWYG ("ce que vous voyez est ce que vous obtenez")
-- Votre discipline utilise exclusivement Word
-
-### Exemple concret: Pourquoi c'est puissant
-
-**Avec Word/LaTeX traditionnel:**
-```
-1. Analyser vos données dans R/SPSS/Excel
-2. Générer un graphique
-3. L'exporter en image
-4. L'insérer dans Word/LaTeX
-5. Ajuster la taille manuellement
-6. Vos données changent? → Recommencer 1-5
-```
-
-**Avec R Markdown:**
-```markdown
-Voici mes résultats d'analyse:
-
-'''r
-model <- lm(y ~ x, data = mes_donnees)
-summary(model)
-plot(model)
-'''
-
-Mes données changent? → Cliquez "Knit" → Tout se met à jour automatiquement.
-```
-
 ---
 
 ## 📁 Structure du repository
@@ -240,17 +202,7 @@ brew install --cask mactex
 - Installer [MiKTeX](https://miktex.org/download) (recommandé pour débutants - installe les packages automatiquement)
 - Ou [TeX Live](https://www.tug.org/texlive/windows.html)
 
-**Linux:**
-```bash
-# Ubuntu/Debian
-sudo apt-get install texlive-full
-
-# Fedora
-sudo dnf install texlive-scheme-full
-
-# Arch Linux
-sudo pacman -S texlive-most
-```
+**Linux:** Installer `texlive-full` via votre gestionnaire de packages (apt, dnf, pacman, etc.)
 
 **Packages R (obligatoires)**
 
@@ -415,47 +367,7 @@ Texte...
 2. **Cliquez "Knit"**
 3. Le PDF et le fichier .tex apparaissent dans `_book/`
 
-### Syntaxe Markdown de base
-
-```markdown
-# Titre de niveau 1 (chapitre)
-## Titre de niveau 2 (section)
-### Titre de niveau 3 (sous-section)
-
-**Texte en gras**
-*Texte en italique*
-
-- Liste à puces
-- Deuxième élément
-  - Sous-élément
-
-1. Liste numérotée
-2. Deuxième élément
-
-> Citation en bloc
-
-[Lien hypertexte](https://www.example.com)
-![Légende de l'image](figure/mon-image.png)
-```
-
-**Pour R Markdown:**
-```markdown
-'''r
-# Bloc de code R exécutable
-summary(mes_donnees)
-plot(x, y)
-'''
-
-Référence croisée à la Figure \@ref(fig:mon-graphique)
-Équation inline: $E = mc^2$
-
-Équation en bloc:
-$$
-\bar{x} = \frac{1}{n} \sum_{i=1}^{n} x_i
-$$
-```
-
-**💡 Plus d'aide:** [R Markdown Cheat Sheet](https://www.rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf) • [Bookdown Manual](https://bookdown.org/yihui/bookdown/)
+**💡 Aide à la rédaction:** [R Markdown Cheat Sheet](https://www.rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf) • [Bookdown Manual](https://bookdown.org/yihui/bookdown/)
 
 ### Citations
 
@@ -506,40 +418,9 @@ knitr::include_graphics("figure/mon-graphique.png")
 
 ### Quelle est la différence entre .cls, .csl et .sty?
 
-- **`.cls`** (LaTeX class): Structure du document (marges, en-têtes, sections). ⛔ **Ne pas modifier** sauf si normes FESP changent.
-- **`.csl`** (Citation Style Language): Style des citations (APA par défaut). ✅ **Changeable** - téléchargez d'autres styles sur [Zotero Style Repository](https://www.zotero.org/styles)
-- **`.sty`** (LaTeX package): Fonctionnalités additionnelles (ex: `chemarr.sty` pour flèches chimiques). ⛔ **Ne pas modifier**.
-
-### Dois-je déclarer l'IA même si je n'en ai pas utilisé?
-
-**Oui, à partir du 12 janvier 2026.** Vous devez déclarer explicitement que vous n'avez pas utilisé d'outils d'IA générative. L'absence de cette déclaration retardera le dépôt.
-
-### Format par articles vs traditionnel?
-
-**Par articles:**
-- Chaque chapitre est un article scientifique (publié/soumis/en préparation)
-- Vous devez être premier auteur ou co-premier auteur
-- Avant-propos avec détails de publication et contributions
-- `chapter_name: "Article "`
-
-**Traditionnel (monographie):**
-- Structure classique: intro, revue, méthodo, résultats, discussion, conclusion
-- Chapitres thématiques
-- `chapter_name: "Chapitre "`
-
-### Comment changer le style bibliographique?
-
-1. Téléchargez le fichier `.csl` depuis [Zotero Style Repository](https://www.zotero.org/styles)
-2. Placez-le dans `index/csl/`
-3. Modifiez `csl: csl/votre-style.csl` dans `index/index.Rmd`
-
-**Note:** La FESP n'impose pas de style, mais vérifiez avec votre département.
-
-### Limites des résumés?
-
-- **Mémoire:** 300 mots max
-- **Thèse:** 700 mots max
-- **Essai:** Vérifier avec département (~300 mots)
+- **`.cls`** (LaTeX class): Structure du document (marges, en-têtes, sections). ⛔ **Ne pas modifier**.
+- **`.csl`** (Citation Style): Style des citations (APA par défaut). ✅ **Changeable** - autres styles sur [Zotero](https://www.zotero.org/styles)
+- **`.sty`** (LaTeX package): Fonctionnalités additionnelles. ⛔ **Ne pas modifier**.
 
 ### Erreur "Lonely \item" ou "Environment CSLReferences undefined"?
 
@@ -547,15 +428,7 @@ Ce problème a été résolu en novembre 2025. Faites `git pull` pour obtenir la
 
 ### Comment insérer une page blanche?
 
-⚠️ **Éviter selon les normes FESP actuelles** (pour faciliter lecture à l'écran). Si nécessaire pour impression recto-verso:
-1. Le fichier `00-blank.Rmd` existe déjà
-2. Ajoutez-le dans `_bookdown.yml` à l'endroit désiré
-
-### Est-ce compatible avec mon département?
-
-Ce gabarit suit les règles générales FESP mais est **optimisé pour la science politique**.
-
-**⚠️ Important:** Validez toujours avec votre directeur/directrice et votre département avant le dépôt final.
+Le fichier `00-blank.Rmd` existe déjà. Ajoutez-le dans `_bookdown.yml` à l'endroit désiré (déconseillé par la FESP pour faciliter lecture à l'écran).
 
 ---
 
