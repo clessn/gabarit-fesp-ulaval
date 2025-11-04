@@ -22,18 +22,37 @@ Votre texte en Markdown → R Markdown → LaTeX → PDF professionnel
                          Analyse + Graphiques
 ```
 
-### Avantages par rapport aux gabarits Word ou LaTeX traditionnels
+### Avantages par rapport aux gabarits Word, LaTeX ou Quarto
 
-| Aspect | Word | LaTeX pur | **R Markdown** |
-|--------|------|-----------|----------------|
-| **Facilité d'écriture** | ✅ Très facile | ❌ Courbe d'apprentissage raide | ✅ Syntaxe simple et lisible |
-| **Contrôle du formatage** | ❌ Limité, formatage instable | ✅ Contrôle total | ✅ Contrôle total via LaTeX |
-| **Intégration code/analyses** | ❌ Copier-coller manuel | ⚠️ Complexe | ✅ Intégration native R/Python |
-| **Reproductibilité** | ❌ Faible | ⚠️ Manuelle | ✅ Complète et automatique |
-| **Gestion bibliographie** | ⚠️ Zotero/Mendeley | ✅ BibTeX natif | ✅ BibTeX natif |
-| **Figures et tableaux** | ❌ Insertion manuelle | ⚠️ Complexe | ✅ Générés automatiquement |
-| **Collaboration Git** | ❌ Difficile (binaire) | ✅ Excellent | ✅ Excellent (texte brut) |
-| **Maintenance à long terme** | ❌ Risque de corruption | ✅ Stable | ✅ Stable |
+| Aspect | Word | LaTeX pur | **R Markdown** | Quarto |
+|--------|------|-----------|----------------|--------|
+| **Facilité d'écriture** | ✅ Très facile | ❌ Courbe d'apprentissage raide | ✅ Syntaxe simple et lisible | ✅ Syntaxe simple et lisible |
+| **Contrôle du formatage** | ❌ Limité, formatage instable | ✅ Contrôle total | ✅ Contrôle total via LaTeX | ✅ Contrôle total via LaTeX |
+| **Intégration code/analyses** | ❌ Copier-coller manuel | ⚠️ Complexe | ✅ Intégration native R/Python | ✅ Multi-langages (R/Python/Julia/Observable) |
+| **Reproductibilité** | ❌ Faible | ⚠️ Manuelle | ✅ Complète et automatique | ✅ Complète et automatique |
+| **Gestion bibliographie** | ⚠️ Zotero/Mendeley | ✅ BibTeX natif | ✅ BibTeX natif | ✅ BibTeX natif |
+| **Figures et tableaux** | ❌ Insertion manuelle | ⚠️ Complexe | ✅ Générés automatiquement | ✅ Générés automatiquement |
+| **Collaboration Git** | ❌ Difficile (binaire) | ✅ Excellent | ✅ Excellent (texte brut) | ✅ Excellent (texte brut) |
+| **Maintenance à long terme** | ❌ Risque de corruption | ✅ Stable | ✅ Stable | ✅ Stable |
+| **Outputs multiples** | ❌ Word seulement | ❌ PDF seulement | ⚠️ PDF/HTML/Word (limité) | ✅ PDF/HTML/Word/etc. (natif) |
+| **Gabarit FESP ULaval** | ✅ Officiel | ✅ Officiel | ✅ **Ce gabarit** | ❌ Non disponible |
+| **Maturité écosystème** | ✅ Très mature | ✅ Très mature | ✅ Mature et stable | ⚠️ Récent (2022), en évolution |
+
+### Pourquoi ce gabarit utilise R Markdown plutôt que Quarto?
+
+**Quarto** est le successeur moderne de R Markdown, développé par Posit (anciennement RStudio). Il offre plusieurs avantages:
+- Support multi-langages plus robuste (R, Python, Julia, Observable)
+- Meilleure gestion des outputs multiples (HTML, PDF, Word, sites web)
+- Architecture plus moderne et extensible
+
+**Cependant, ce gabarit utilise R Markdown car:**
+- ✅ **Gabarit LaTeX existant et testé**: Ce template a été développé et validé avec R Markdown + bookdown
+- ✅ **Stabilité**: R Markdown est mature et ne changera plus (maintenance mode)
+- ✅ **Compatibilité**: Tous les packages et workflows existants fonctionnent
+- ✅ **Spécialisé pour LaTeX/PDF**: Pour les thèses, le format final est PDF (pas HTML ou Word)
+- ⚠️ **Migration Quarto**: Nécessiterait de réécrire le template LaTeX et la configuration bookdown
+
+**Note**: Si vous commencez un nouveau projet et prévoyez produire plusieurs formats (web, slides, etc.), considérez [Quarto](https://quarto.org/). Pour une thèse FESP en PDF uniquement, R Markdown reste un excellent choix.
 
 ### Cas d'usage idéaux pour ce gabarit
 
