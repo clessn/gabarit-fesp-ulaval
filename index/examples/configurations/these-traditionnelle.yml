@@ -1,0 +1,8 @@
+# Configuration pour THÈSE TRADITIONNELLE (monographie)
+# À copier dans index/_bookdown.yml
+
+book_filename: "These_PrenomNom"
+chapter_name: "Chapitre "
+rmd_files: ["index.Rmd", "01-revue-litterature.Rmd", "02-cadre-theorique.Rmd", "03-methodologie.Rmd", "04-resultats.Rmd", "05-discussion.Rmd", "06-conclusion.Rmd", "99-references.Rmd"]
+download: [["these.pdf", "PDF"], ["these.epub", "EPUB"], ["these.docx", "Word"]]
+delete_merged_file: true

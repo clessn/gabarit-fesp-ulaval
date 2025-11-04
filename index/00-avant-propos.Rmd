@@ -1,0 +1,19 @@
+# Avant-propos {-}
+
+## Déclaration sur l'utilisation de l'intelligence artificielle générative {-}
+
+<!-- OBLIGATOIRE à partir du 12 janvier 2026 -->
+<!-- IMPORTANT: Complétez cette section selon votre utilisation ou non de l'IA -->
+<!-- Consultez index/examples/avant-propos/ pour des templates détaillés -->
+
+Avec l'accord de [ma directrice/mon directeur] de recherche, des outils d'intelligence artificielle générative [ont été utilisés/n'ont pas été utilisés] dans la préparation et la rédaction de ce [mémoire/cette thèse/cet essai].
+
+<!--
+SI VOUS AVEZ UTILISÉ L'IA:
+Copiez le contenu de index/examples/avant-propos/00-avant-propos-IA-seulement.Rmd
+ou 00-avant-propos-IA-et-articles.Rmd selon votre format et complétez-le.
+
+SI FORMAT PAR ARTICLES:
+Utilisez index/examples/avant-propos/00-avant-propos-IA-et-articles.Rmd
+pour inclure aussi les détails de vos articles.
+-->

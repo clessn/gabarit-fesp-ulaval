@@ -1,0 +1,8 @@
+# Configuration pour MÉMOIRE TRADITIONNEL (monographie)
+# À copier dans index/_bookdown.yml
+
+book_filename: "Memoire_PrenomNom"
+chapter_name: "Chapitre "
+rmd_files: ["index.Rmd", "01-revue-litterature.Rmd", "02-methodologie.Rmd", "03-resultats.Rmd", "04-discussion.Rmd", "05-conclusion.Rmd", "99-references.Rmd"]
+download: [["memoire.pdf", "PDF"], ["memoire.epub", "EPUB"], ["memoire.docx", "Word"]]
+delete_merged_file: true

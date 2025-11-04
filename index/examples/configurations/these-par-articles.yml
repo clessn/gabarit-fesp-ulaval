@@ -1,0 +1,8 @@
+# Configuration pour THÈSE PAR ARTICLES
+# À copier dans index/_bookdown.yml
+
+book_filename: "These_PrenomNom"
+chapter_name: "Article "
+rmd_files: ["index.Rmd", "01-article1.Rmd", "02-article2.Rmd", "03-article3.Rmd", "04-article4.Rmd", "05-conclusion.Rmd", "99-references.Rmd"]
+download: [["these.pdf", "PDF"], ["these.epub", "EPUB"], ["these.docx", "Word"]]
+delete_merged_file: true

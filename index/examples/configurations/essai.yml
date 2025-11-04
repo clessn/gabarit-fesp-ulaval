@@ -1,0 +1,8 @@
+# Configuration pour ESSAI DE MAÎTRISE PROFESSIONNELLE
+# À copier dans index/_bookdown.yml
+
+book_filename: "Essai_PrenomNom"
+chapter_name: "Chapitre "
+rmd_files: ["index.Rmd", "01-problematique.Rmd", "02-analyse.Rmd", "03-conclusion.Rmd", "99-references.Rmd"]
+download: [["essai.pdf", "PDF"], ["essai.epub", "EPUB"], ["essai.docx", "Word"]]
+delete_merged_file: true

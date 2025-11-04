@@ -1,43 +1,104 @@
 ---
-auteur: 'Prénom Nom' # Entrer le nom de l'auteur entre ' '
-date: 'Mois Année ' # Entrer la date du dépôt entre ' '
-directeur: 'Prénom Nom' # Entrer le nom du directeur/directrice de recherche entre ' '
-direction: 'directeur' # Entrer 'directeur' ou 'directrice', en fonction du sexe du directeur/directrice de recherche, sans majuscule
-#codirecteur: 'Un Tel' # Entrer le nom du codirecteur/codirectrice de recherche entre ' '
-#codirection: 'codirecteur-ice' # Entrer 'codirecteur' ou 'codirectrice', en fonction du genre du codirecteur/codirectrice de recherche
-departement: 'science politique' # Entrer le nom du département délivrant le diplôme entre ' ', sans majuscule
-grade: 'M.A.' # Entrer le type de grade entre ' ' (M.A., M.Sc., PhD, etc.)
-diplome: 'Maîtrise' # Entrer le nom du diplôme entre ' ' (Maîtrise, Doctorat, etc.)
-type: 'Mémoire' # Entrer le type de projet entre ' ' (Essai, mémoire, thèse, etc.)
-# Entrer le titre entre sur la première ligne, et le sous-titre sur la 2e
-titre: | 
-          | Titre
-          |  Sous-titre
+# ============================================================================
+# CONFIGURATION DU MÉMOIRE / THÈSE / ESSAI
+# ============================================================================
+# Ce fichier configure les métadonnées de votre document.
+# Consultez le README.md pour des instructions détaillées.
+#
+# Dernière mise à jour: Novembre 2025
+# Basé sur les règles FESP du 17 septembre 2025
+# ============================================================================
+
+# === INFORMATIONS DE BASE ===
+auteur: 'Prénom Nom'
+date: 'Mois Année'  # ex: Avril 2026
+
+# === DIRECTION DE RECHERCHE ===
+directeur: 'Prénom Nom du directeur'
+direction: 'directeur'  # Options: 'directeur' ou 'directrice'
+
+# Si vous avez un codirecteur (décommentez si applicable):
+#codirecteur: 'Prénom Nom du codirecteur'
+#codirection: 'codirecteur'  # Options: 'codirecteur' ou 'codirectrice'
+
+departement: 'science politique'  # Nom complet du département, sans majuscule
+grade: 'M.A.'  # Options: M.A., M.Sc., Ph.D., etc.
+
+# === TYPE DE DOCUMENT ===
+# Choisissez selon votre situation (décommentez la combinaison appropriée):
+
+# Pour MÉMOIRE DE MAÎTRISE RECHERCHE (configuration actuelle):
+diplome: 'Maîtrise'
+type: 'Mémoire'
+# Résumé max: 300 mots
+
+# Pour THÈSE DE DOCTORAT (décommentez si applicable):
+# diplome: 'Doctorat'
+# type: 'Thèse'
+# Résumé max: 700 mots
+
+# Pour ESSAI DE MAÎTRISE PROFESSIONNELLE (décommentez si applicable):
+# diplome: 'Maîtrise'
+# type: 'Essai'
+# Résumé max: 300 mots (à valider avec votre département)
+
+# === TITRE ET SOUS-TITRE ===
+titre: |
+          | Titre principal de votre document
+          | Sous-titre (optionnel)
+# === CONFIGURATION TECHNIQUE (ne pas modifier) ===
 knit: "bookdown::render_book"
 site: bookdown::bookdown_site
-output: 
-  thesisdown::thesis_pdf: 
+output:
+  thesisdown::thesis_pdf:
       latex_engine: xelatex
-bibliography: bib/bibfile.bib
-csl: csl/apa.csl
-lof: true
-lot: true 
+
+# === BIBLIOGRAPHIE ===
+bibliography: bib/bibfile.bib  # Ajoutez vos références dans ce fichier
+csl: csl/apa.csl  # Style de citation APA (changez si nécessaire)
+# Pour changer le style: téléchargez un fichier .csl depuis
+# https://www.zotero.org/styles et modifiez cette ligne
+
+# === LISTES (optionnel) ===
+lof: true  # Liste des figures (true pour inclure, false pour exclure)
+lot: true  # Liste des tableaux (true pour inclure, false pour exclure)
+
+# === PACKAGES LATEX (généralement ne pas modifier) ===
 header-includes:
 - \usepackage{setspace}
 - \usepackage[labelfont=bf,textfont=md]{caption}
 - \usepackage{float}
-- \usepackage[nottoc]{tocbibind} # pour ajouter les lof et lot dans la toc
+- \usepackage[nottoc]{tocbibind}
 - \AtBeginDocument{\renewcommand{\contentsname}{Table des matières}}
 - \AtBeginDocument{\renewcommand{\listfigurename}{Liste des figures}}
 - \AtBeginDocument{\renewcommand{\listtablename}{Liste des tableaux}}
 - \AtBeginDocument{\renewcommand{\chaptername}{Article}}
+  # NOTE: Changez "Article" en "Chapitre" si format traditionnel
+  # OU modifiez chapter_name dans _bookdown.yml (recommandé)
 - \usepackage{pdflscape}
 - \newcommand{\blandscape}{\begin{landscape}}
 - \newcommand{\elandscape}{\end{landscape}}
+
+# === AVANT-PROPOS (OBLIGATOIRE dès le 12 janvier 2026) ===
+# Copiez le template approprié depuis index/examples/avant-propos/ :
+#   - Pour format traditionnel/essai: 00-avant-propos-IA-seulement.Rmd
+#   - Pour format par articles: 00-avant-propos-IA-et-articles.Rmd
+# Ensuite, complétez le fichier 00-avant-propos.Rmd dans index/
+avantpropos: |
+  `r if(knitr:::is_latex_output()) paste(readLines("00-avant-propos.Rmd"), collapse = '\n  ')`
+# NOTE: Cette ligne génèrera une erreur si 00-avant-propos.Rmd n'existe pas.
+# Créez ce fichier en suivant les instructions du README.md
+
+# === RÉSUMÉS ===
 resume: |
   `r if(knitr:::is_latex_output()) paste(readLines("00-resume.Rmd"), collapse = '\n  ')`
+# Mémoire: max 300 mots | Thèse: max 700 mots
+
 abstract: |
   `r if(knitr:::is_latex_output()) paste(readLines("00-abstract.Rmd"), collapse = '\n  ')`
+# Résumé en anglais recommandé pour visibilité internationale
+
+# === REMERCIEMENTS (optionnel) ===
 remerciements: |
   `r if(knitr:::is_latex_output()) paste(readLines("00--remerciements.Rmd"), collapse = '\n  ')`
 ---

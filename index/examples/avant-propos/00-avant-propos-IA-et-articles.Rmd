@@ -1,0 +1,123 @@
+# Avant-propos {-}
+
+## Déclaration sur l'utilisation de l'intelligence artificielle générative {-}
+
+<!-- OBLIGATOIRE à partir du 12 janvier 2026 pour tous les mémoires et thèses -->
+<!-- Adaptez le texte selon votre situation -->
+
+Avec l'accord de [ma directrice/mon directeur] de recherche, des outils d'intelligence artificielle générative [ont été utilisés/n'ont pas été utilisés] dans la préparation et la rédaction de ce mémoire [ou cette thèse].
+
+<!-- SI VOUS AVEZ UTILISÉ L'IA, COMPLÉTEZ LES SECTIONS SUIVANTES: -->
+
+<!-- Décommentez et complétez si applicable:
+
+### Outils utilisés {-}
+
+Les outils d'intelligence artificielle générative suivants ont été utilisés dans le cadre de ce projet de recherche:
+
+- [Nom de l'outil 1] (version X.X)
+- [Nom de l'outil 2] (version X.X)
+
+### Utilisation spécifique {-}
+
+Ces outils ont été utilisés pour les tâches suivantes:
+
+- [Décrivez précisément: ex: révision linguistique, génération d'idées pour la structure, aide à la formulation, etc.]
+- [Autre utilisation]
+
+### Mesures de vérification {-}
+
+Les mesures suivantes ont été mises en place pour vérifier la qualité et l'exactitude du contenu généré:
+
+- [Décrivez: ex: vérification systématique des sources, validation des références, révision critique du contenu, etc.]
+- [Autre mesure]
+
+### Citations et contributions {-}
+
+Toutes les contributions significatives de l'intelligence artificielle générative ont été explicitement citées dans le texte selon les normes de mon domaine d'études.
+
+### Considérations éthiques {-}
+
+L'utilisation de ces outils a été guidée par les principes suivants:
+
+- Respect de l'intégrité académique et de l'originalité de la recherche
+- Transparence dans l'identification des contributions de l'IA
+- Responsabilité personnelle quant au contenu final du document
+- [Autres considérations pertinentes]
+
+-->
+
+<!-- SI VOUS N'AVEZ PAS UTILISÉ L'IA, la déclaration ci-dessus suffit (indiquer "n'ont pas été utilisés") -->
+
+\newpage
+
+## Intégration d'articles {-}
+
+<!-- OBLIGATOIRE pour mémoires/thèses par articles, mixtes ou par dossier ordonné -->
+<!-- Répétez la section suivante pour chaque article intégré -->
+
+### Article 1: [Titre complet de l'article] {-}
+
+**État de préparation et publication:**
+
+- [Choisir l'une des options suivantes:]
+  - Manuscrit en préparation
+  - Soumis le [date] à la revue [nom de la revue]
+  - Accepté le [date] dans la revue [nom de la revue]
+  - Publié le [date] dans la revue [nom de la revue], volume X, numéro Y, pages Z-W
+
+**Modifications:**
+
+[Si l'article est publié ou accepté, indiquer s'il y a des modifications entre la version intégrée et la version publiée. Sinon, écrire: "Aucune modification."]
+
+**Statut d'auteur:**
+
+Je suis [premier auteur / co-premier auteur / coauteur] de cet article.
+
+**Contribution:**
+
+Ma contribution à cet article comprend:
+
+- [Décrivez précisément votre rôle: ex: conception de la recherche, collecte des données, analyse statistique, rédaction, etc.]
+- [Autre contribution]
+
+**Co-auteurs:**
+
+Cet article a été coécrit avec:
+
+- [Nom du co-auteur 1] - [Brève description de sa contribution]
+- [Nom du co-auteur 2] - [Brève description de sa contribution]
+
+<!-- Si vous êtes seul auteur, écrire: "Je suis le seul auteur de cet article." -->
+
+---
+
+### Article 2: [Titre complet de l'article] {-}
+
+**État de préparation et publication:**
+
+- [Même structure que pour l'Article 1]
+
+**Modifications:**
+
+[...]
+
+**Statut d'auteur:**
+
+[...]
+
+**Contribution:**
+
+[...]
+
+**Co-auteurs:**
+
+[...]
+
+---
+
+<!-- Répétez pour chaque article supplémentaire -->
+
+### Article 3: [Titre complet de l'article] {-}
+
+[...]

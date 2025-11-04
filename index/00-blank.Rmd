@@ -1,0 +1,26 @@
+<!--
+PAGE BLANCHE (si nécessaire)
+
+⚠️ IMPORTANT : Selon les règles FESP actuelles (nov 2025), les pages blanches
+sont À ÉVITER pour faciliter la lecture à l'écran.
+
+Source : https://www.fesp.ulaval.ca/memoires-et-theses/regles-de-presentation
+
+QUAND UTILISER CE FICHIER :
+1. Si votre département l'exige spécifiquement
+2. Pour impression recto-verso (chapitres commencent à droite)
+3. Si requis par votre directeur/directrice
+
+COMMENT UTILISER :
+- Pour insérer une page blanche, ajoutez simplement "00-blank.Rmd" dans
+  la liste rmd_files de votre _bookdown.yml à l'endroit désiré
+- Par défaut, ce fichier N'EST PAS inclus dans les configurations examples/
+
+EXEMPLE dans _bookdown.yml :
+  rmd_files: ["index.Rmd", "01-article1.Rmd", "00-blank.Rmd",
+              "02-article2.Rmd", "99-references.Rmd"]
+
+Pour créer une page blanche, ce fichier doit rester vide sous ce commentaire.
+-->
+
+\newpage
