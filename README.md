@@ -14,13 +14,20 @@ Ce gabarit produit simultanément un fichier PDF et un fichier LaTeX lors du kni
 
 ### Qu'est-ce que R Markdown?
 
-**R Markdown** combine la simplicité de **Markdown** (un langage de balisage léger pour formater du texte) avec la puissance de **R** (pour l'analyse de données et les graphiques) et de **LaTeX** (pour la mise en page professionnelle).
+**[R Markdown](https://rmarkdown.rstudio.com/)** combine la simplicité de **[Markdown](https://www.markdownguide.org/)** (un langage de balisage léger pour formater du texte) avec la puissance de **R** (pour l'analyse de données et les graphiques) et de **LaTeX** (pour la mise en page professionnelle).
 
 ```
 Votre texte en Markdown → R Markdown → LaTeX → PDF professionnel
                               ↓
                          Analyse + Graphiques
 ```
+
+**📚 Ressources pour apprendre:**
+- **[Markdown Guide](https://www.markdownguide.org/)** - Guide complet pour apprendre Markdown (10-15 min)
+- **[Markdown Tutorial](https://commonmark.org/help/)** - Tutoriel interactif (5 min)
+- **[R Markdown: The Definitive Guide](https://bookdown.org/yihui/rmarkdown/)** - Guide complet R Markdown (gratuit)
+- **[R Markdown Cookbook](https://bookdown.org/yihui/rmarkdown-cookbook/)** - Recettes pratiques et astuces
+- **[R Markdown Cheat Sheet](https://www.rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf)** - Aide-mémoire PDF (2 pages)
 
 ### Avantages par rapport aux gabarits Word, LaTeX ou Quarto
 
@@ -46,13 +53,17 @@ Votre texte en Markdown → R Markdown → LaTeX → PDF professionnel
 - Architecture plus moderne et extensible
 
 **Cependant, ce gabarit utilise R Markdown car:**
-- ✅ **Gabarit LaTeX existant et testé**: Ce template a été développé et validé avec R Markdown + bookdown
+- ✅ **Gabarit LaTeX existant et testé**: Ce template a été développé et validé avec [R Markdown](https://rmarkdown.rstudio.com/) + [bookdown](https://bookdown.org/)
 - ✅ **Stabilité**: R Markdown est mature et ne changera plus (maintenance mode)
 - ✅ **Compatibilité**: Tous les packages et workflows existants fonctionnent
 - ✅ **Spécialisé pour LaTeX/PDF**: Pour les thèses, le format final est PDF (pas HTML ou Word)
 - ⚠️ **Migration Quarto**: Nécessiterait de réécrire le template LaTeX et la configuration bookdown
 
 **Note**: Si vous commencez un nouveau projet et prévoyez produire plusieurs formats (web, slides, etc.), considérez [Quarto](https://quarto.org/). Pour une thèse FESP en PDF uniquement, R Markdown reste un excellent choix.
+
+**📚 Pour en savoir plus:**
+- **[Bookdown: Authoring Books and Technical Documents with R Markdown](https://bookdown.org/yihui/bookdown/)** - Documentation complète de bookdown (ce gabarit l'utilise)
+- **[Quarto Guide](https://quarto.org/docs/guide/)** - Pour explorer l'alternative moderne
 
 ### Cas d'usage idéaux pour ce gabarit
 
@@ -551,6 +562,56 @@ rmarkdown::render("index/index.Rmd")
 
 - Vous pouvez éditer les fichiers de chapitres (`01-*.Rmd`, `02-*.Rmd`, etc.) individuellement
 - Pour tester un chapitre seul, vous pouvez le knitter individuellement, mais **le format final ne sera correct qu'en knittant `index.Rmd`**
+
+### Syntaxe Markdown de base
+
+Voici les éléments les plus utilisés dans la rédaction d'un mémoire ou d'une thèse:
+
+```markdown
+# Titre de niveau 1 (chapitre)
+## Titre de niveau 2 (section)
+### Titre de niveau 3 (sous-section)
+
+**Texte en gras** ou __texte en gras__
+*Texte en italique* ou _texte en italique_
+
+- Liste à puces
+- Deuxième élément
+  - Sous-élément indenté
+
+1. Liste numérotée
+2. Deuxième élément
+3. Troisième élément
+
+> Citation en bloc (blockquote)
+> Deuxième ligne de la citation
+
+[Lien hypertexte](https://www.example.com)
+
+![Légende de l'image](figure/mon-image.png)
+```
+
+**Pour aller plus loin avec R Markdown:**
+
+```markdown
+'''r
+# Bloc de code R exécutable
+summary(mes_donnees)
+plot(x, y)
+'''
+
+Référence croisée à la Figure \@ref(fig:mon-graphique)
+Référence à la Table \@ref(tab:mon-tableau)
+
+Équation inline: $E = mc^2$
+
+Équation en bloc:
+$$
+\bar{x} = \frac{1}{n} \sum_{i=1}^{n} x_i
+$$
+```
+
+**💡 Astuce**: Consultez le [R Markdown Cheat Sheet](https://www.rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf) et le [Bookdown Manual](https://bookdown.org/yihui/bookdown/) pour plus d'exemples.
 
 ### Citations
 
