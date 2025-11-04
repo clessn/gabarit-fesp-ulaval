@@ -47,19 +47,23 @@ Votre texte en Markdown → R Markdown → LaTeX → PDF professionnel
 
 ### Pourquoi ce gabarit utilise R Markdown plutôt que Quarto?
 
-**Quarto** est le successeur moderne de R Markdown, développé par Posit (anciennement RStudio). Il offre plusieurs avantages:
+**[Quarto](https://quarto.org/)** est le successeur moderne de R Markdown, développé par Posit (anciennement RStudio). Il offre plusieurs avantages:
 - Support multi-langages plus robuste (R, Python, Julia, Observable)
 - Meilleure gestion des outputs multiples (HTML, PDF, Word, sites web)
 - Architecture plus moderne et extensible
 
-**Cependant, ce gabarit utilise R Markdown car:**
-- ✅ **Gabarit LaTeX existant et testé**: Ce template a été développé et validé avec [R Markdown](https://rmarkdown.rstudio.com/) + [bookdown](https://bookdown.org/)
-- ✅ **Stabilité**: R Markdown est mature et ne changera plus (maintenance mode)
-- ✅ **Compatibilité**: Tous les packages et workflows existants fonctionnent
-- ✅ **Spécialisé pour LaTeX/PDF**: Pour les thèses, le format final est PDF (pas HTML ou Word)
-- ⚠️ **Migration Quarto**: Nécessiterait de réécrire le template LaTeX et la configuration bookdown
+**Ce gabarit utilise R Markdown pour des raisons historiques:**
 
-**Note**: Si vous commencez un nouveau projet et prévoyez produire plusieurs formats (web, slides, etc.), considérez [Quarto](https://quarto.org/). Pour une thèse FESP en PDF uniquement, R Markdown reste un excellent choix.
+Ce template a été créé **avant l'existence de Quarto** (lancé en 2022). Il a été développé et testé avec [R Markdown](https://rmarkdown.rstudio.com/) + [bookdown](https://bookdown.org/), et fonctionne de manière stable et fiable pour produire des thèses et mémoires conformes aux normes FESP.
+
+**📦 Version Quarto**
+
+Nous sommes **ouverts aux contributions** pour créer une version Quarto de ce gabarit! Si vous êtes intéressé à développer un gabarit Quarto pour la FESP, n'hésitez pas à:
+- Ouvrir une [Issue](https://github.com/clessn/gabarit-fesp-ulaval/issues) pour discuter du projet
+- Proposer une Pull Request avec votre implémentation
+- Contacter les mainteneurs pour coordination
+
+**Note**: Si vous commencez un nouveau projet et prévoyez produire plusieurs formats (web, slides, etc.), considérez [Quarto](https://quarto.org/). Pour une thèse FESP en PDF uniquement, R Markdown reste un excellent choix éprouvé.
 
 **📚 Pour en savoir plus:**
 - **[Bookdown: Authoring Books and Technical Documents with R Markdown](https://bookdown.org/yihui/bookdown/)** - Documentation complète de bookdown (ce gabarit l'utilise)
