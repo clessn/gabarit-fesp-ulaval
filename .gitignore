@@ -12,8 +12,7 @@ _privateFolder*
 _Privatefolder*
 _privatefolder*
 
-# Build output directories (generated, do not commit)
-_book/
+# Build intermediate files (keep final PDFs)
 _bookdown_files/
 _misc/
 
@@ -23,9 +22,6 @@ _misc/
 .RData
 .Rapp.history
 .Rproj.user
-
-##Excel
-*.xlsx
 ###########################################
 ##### LaTeX auxiliary files to ignore #####
 ###########################################
@@ -51,7 +47,7 @@ _misc/
 # these rules might exclude image files for figures etc.
 # *.ps
 # *.eps
-*.png
+# *.png  # Commented out to keep figures
 
 
 ## Bibliography auxiliary files (bibtex/biblatex/biber):
