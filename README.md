@@ -1,4 +1,4 @@
-# memoire-ulaval
+# gabarit-fesp-ulaval
 
 Gabarit R Markdown pour mémoires, thèses et essais conformes aux normes de la [Faculté des études supérieures et postdoctorales (FESP)](https://www.fesp.ulaval.ca/memoires-et-theses) de l'Université Laval.
 
