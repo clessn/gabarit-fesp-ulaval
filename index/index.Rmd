@@ -112,7 +112,7 @@ if(!require(thesisdown))
 library(thesisdown)
 ```
 
-\doublespace
+\onehalfspacing
 
 # Introduction {-}
 

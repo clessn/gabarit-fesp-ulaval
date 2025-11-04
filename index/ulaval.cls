@@ -180,14 +180,22 @@
 % \let\RToldcleardoublepage\cleardoublepage
 % \renewcommand{\cleardoublepage}{\RTcleardoublepage}
 
-% adjust margins for binding  (changed 2007-04-24 tgp)
-\setlength{\oddsidemargin}{.25in}
-\setlength{\evensidemargin}{.25in}
-\setlength{\textwidth}{6.0in}
-\setlength{\textheight}{9.0in}
-\setlength\topmargin{0in}
-\addtolength\topmargin{-\headheight}
-\addtolength\topmargin{-\headsep}
+% adjust margins for FESP requirements (30mm left/right, 25mm top/bottom)
+% Based on official FESP guidelines: https://www.fesp.ulaval.ca/en/masters-and-doctoral-theses/presentation-guidelines
+\setlength{\oddsidemargin}{30mm}
+\addtolength{\oddsidemargin}{-1in} % compensate for LaTeX's 1in offset
+\setlength{\evensidemargin}{30mm}
+\addtolength{\evensidemargin}{-1in} % compensate for LaTeX's 1in offset
+\setlength{\textwidth}{\paperwidth}
+\addtolength{\textwidth}{-60mm} % 30mm left + 30mm right
+\setlength{\topmargin}{25mm}
+\addtolength{\topmargin}{-1in} % compensate for LaTeX's 1in offset
+\addtolength{\topmargin}{-\headheight}
+\addtolength{\topmargin}{-\headsep}
+\setlength{\textheight}{\paperheight}
+\addtolength{\textheight}{-50mm} % 25mm top + 25mm bottom
+\addtolength{\textheight}{-\headheight}
+\addtolength{\textheight}{-\headsep}
 
 %\setlength{\oddsidemargin}{.6in}
 %\setlength{\evensidemargin}{0in}
@@ -250,7 +258,7 @@
   \fi
   \chapter{Remerciements}
   \fontsize{12}{14}\selectfont
-  \doublespacing
+  \onehalfspacing
 }{\clearpage \if@restonecol\twocolumn\fi}%
 
 \newenvironment{preface}{%
@@ -345,12 +353,13 @@
     \vfil
     Québec, Canada \\
     \vfil
-    \copyright \thinspace \@auteur, 2020 \\
+    \copyright \thinspace \@auteur, \the\year \\
   \end{center}\par
   \end{titlepage}
 
 %% Second cover page
-   \cleardoublepage
+%% Using \clearpage instead of \cleardoublepage to avoid blank pages (FESP requirement)
+   \clearpage
   {\fontsize{11}{11}
   \thispagestyle{empty}
   \null\vfil
@@ -364,7 +373,7 @@
   \centerline{\@directeur, \@direction{} de recherche}
   % \centerline{\@codirecteur, \@codirection{} de recherche}  ### Décommentez si vous avez une codirection
   \par\vfil\null}
-   \cleardoublepage
+   \clearpage
   }
 }
 
